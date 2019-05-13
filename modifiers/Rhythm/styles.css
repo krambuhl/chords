@@ -1,0 +1,5 @@
+.extraSmall > * + * { margin-top: var(--spacing-extra-small); }
+.small > * + * { margin-top: var(--spacing-small); }
+.medium > * + * { margin-top: var(--spacing-medium); }
+.large > * + * { margin-top: var(--spacing-large); }
+.extraLarge > * + * { margin-top: var(--spacing-extra-large); }

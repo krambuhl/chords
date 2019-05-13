@@ -1,0 +1,10 @@
+.root {
+  margin: auto;
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
+}
+
+/* variants */
+.sizeShell {
+  max-width: 1440px;
+}

@@ -1,0 +1,6 @@
+.brand { background-color: var(--color-brand); }
+
+/* gradient */
+.brandGradient {
+  background-image: var(--color-brand-gradient);
+}

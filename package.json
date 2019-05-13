@@ -1,0 +1,32 @@
+{
+  "name": "chords",
+  "version": "1.0.0",
+  "author": "Eevee Kreevee <thekrambuhl@gmail.com>",
+  "license": "MIT",
+  "main": "next.config.js",
+  "scripts": {
+    "start": "next",
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-offline": "^3.4.0",
+    "postcss-apply": "^0.12.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-responsive-type": "^1.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "^8.1.0",
+    "piu": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reset-css": "^4.0.1",
+    "teoria": "^2.5.0"
+  }
+}

@@ -1,0 +1,29 @@
+html, body {
+  font-family: var(--font-family-body);
+  font-weight: 400;
+}
+
+html {
+  font-size: responsive 20px 24px;
+  font-range: 320px 1440px;
+  line-height: 1.5em;
+  background-color: var(--color-light);
+}
+
+body {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--color-dark);
+
+  &:hover,
+  &:focus {
+    color: var(--color-focus);
+  }
+
+  &:focus {
+    @apply --focus;
+  }
+}

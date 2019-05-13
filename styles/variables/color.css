@@ -1,0 +1,17 @@
+:root {
+  /* grayscale colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* brand colors */
+  --color-dark: var(--color-black);
+  --color-light: var(--color-white);
+  --color-brand: #b028d1;
+  --color-brand-dark: #7824aa;
+
+  /* usage colors */
+  --color-focus: var(--color-brand);
+
+  /* gradients */
+  --color-brand-gradient: linear-gradient(to bottom, var(--color-brand), var(--color-brand-dark));
+}
