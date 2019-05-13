@@ -3,7 +3,7 @@ const withOffline = require('next-offline')
 const withCSS = require('@zeit/next-css')
 
 module.exports = withPlugins([
-  withOffline,
+  // withOffline,
   withCSS
 ], {
   target: 'serverless',

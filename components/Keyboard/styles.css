@@ -1,0 +1,58 @@
+@import "../../styles/variables/state.css";
+@import "../../styles/variables/breakpoints.css";
+
+.root {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #eee;
+
+  @media (--medium) {
+    display: flex;
+  }
+}
+
+.key {
+  width: 100%;
+
+  & + .key {
+    margin-top: 2px;
+  }
+
+  @media (--medium) {
+    & + .key {
+      margin-left: 2px;
+    }
+  }
+}
+
+.label {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background-color: white;
+  padding: 3px 2em;
+  text-align: center;
+  cursor: pointer;
+
+  .blackKey & {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+  }
+
+  @media (--medium) {
+    margin-top: 0.5em;
+    padding: 2em 1px;
+  }
+}
+
+.input:checked + .label {
+  background-color: var(--color-brand);
+  color: var(--color-light);
+}
+
+.input:focus + .label {
+  @apply --focus;
+  z-index: 2;
+}
