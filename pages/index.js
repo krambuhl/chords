@@ -30,14 +30,14 @@ class IndexPage extends React.Component {
     const notes = keys.map(teoria.note)
     const chords = piu.infer(notes).map(piu.name)
 
-    console.log(chords)
-
     return (
       <PageLayout contentClass={Rhythm.large}>
         <Keyboard onChange={this.onKeyboardChange} />
 
-        { chords.length > 0 && <Heading variant={Heading.h2}>{chords.join(' / ')}</Heading> }
-        { keys.length > 0 && <p>{keys.join(' – ')}</p> }
+        <div className={Rhythm.medium}>
+          <Heading variant={Heading.h3}>{ chords.length > 0 ? chords.join(' / ') : '–' }</Heading>
+          { keys.length > 0 && <p>{keys.join(' – ')}</p> }
+        </div>
       </PageLayout>
     )
   }
